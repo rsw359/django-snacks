@@ -1,14 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-<nav >
-    <a href="{% url 'home' %}">Home</a>
-    <a href="{% url 'about' %}">About</a>
-</nav>
+{% extends "base.html" %}
+
+{% block content %}
 <h1>Home Page</h1>
-</body>
-</html>
+<p>ホームページです</p>
+{% endblock %}

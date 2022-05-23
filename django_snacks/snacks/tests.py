@@ -15,3 +15,8 @@ class ThingsTests(SimpleTestCase):
         url = reverse('home')
         response = self.client.get(url)
         self.assertTemplateUsed(response, 'home.html')
+
+    def test_base_template(self):
+        url = reverse('home')
+        response = self.client.get(url)
+        self.assertTemplateUsed(response, 'base.html')
